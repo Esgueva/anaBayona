@@ -86,18 +86,22 @@ a:focus{
 .navbar-brand img{
 	filter: brightness(0) invert(1);
 	transition: all 0.3s;
+	max-width: 1.2em;
+	position: absolute;
 }
 
 .navbar-brand h4{
-	font-size: 1.5em;
+	font-size: 1.2em;
 	margin: 0;
 	padding-top:10px;
+	padding-left: 30px;
 	color: white;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	text-transform: uppercase;
 	font-family: 'Merienda One', cursive;
+	text-shadow: 3px 3px 6px #000000;
 }
 
 .navbar-brand h1 i{
@@ -191,22 +195,21 @@ a:focus{
 /*****      Slider area css     *****/
 /************************************/
 .banner h1 {
-	color: white;
-	font-size: 5em;
+	color: #CFAE5E;
+	font-size: 6em;
 	font-family: 'Merienda One', cursive;
+	text-shadow: 3px 3px 6px #000000;
 }
 
 .banner{
 	position: relative;
 	top: 0px;
 	left: 0;
-	/*height: 100%;*/
 	width: 100%;
 	background: url(../images/hero.jpg) no-repeat center center;
 	background-size: cover;
-	/*padding: 0 0 160px;*/
-	padding-top: 44%;
-	padding-bottom: 5%;
+	padding-top: 15%;
+	padding-bottom: 10%;
 }
 
 .banner:after{
@@ -220,16 +223,26 @@ a:focus{
 	background: rgba(0,0,0,0.50);
 }
 
+.banner-image{
+	width: 30%;
+    margin:auto;
+}
+
 .header-banner{
 	position: relative;
 	z-index: 1;
 	text-align: center;
 }
 
+.header-banner img{
+	max-width: 10%;
+}
+
+
 .main-title{
 	text-align: center;
 	position: relative;
-	margin-bottom: 70px;
+	margin-bottom: 40px;
 }
 
 .main-title:after{
@@ -280,11 +293,8 @@ a:focus{
 	padding: 100px 0;
 }
 
-.about-desc{
-	
-}
-
 .about-desc h2{
+	margin-top: 20px;
 	font-size: 35px;
 	color: #282828;
 	font-weight: 500;
@@ -298,15 +308,38 @@ a:focus{
 }
 
 .about-desc p{
-	color: #707070;
-	font-size: 15px;
-	line-height: 1.8em;
+	font:bold;
+	color: black;
+	font-size: 19px;
+	line-height: 2em;
+	margin-top: 1.5em;
 	margin-bottom: 1.5em;
+	letter-spacing: 1px;
+}
+
+.about-desc p span{
+	color: #d0ae5e;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 500;
+	line-height: 1.3em;
+	margin-bottom: 40px;
 }
 
 .about-image{
-	margin-top: 120px;
+	width: 80%;
+	margin-left: 10%;
 }
+
+.about-image img{
+	border-radius:50%;
+}
+
+.about-btn{
+  text-align:center;
+  margin:auto;
+}
+
 
 .what-do-you{
 	padding: 100px 0;
@@ -336,7 +369,7 @@ a:focus{
 }
 
 .whatdoyou-heading p{
-	font-size: 14px;
+	font-size: 25px;
 	color: #fff;
 	line-height: 1.5em;
 	margin-bottom: 1.5em;
@@ -356,11 +389,13 @@ a:focus{
 .whatdoyou-box{
 	background: #fff;
 	border-radius: 14px;
+	margin-top: 25px;
 }
 
 .whatdoyou-box figure{
 	border-radius: 14px 14px 0 0; 
 	overflow: hidden;
+	text-align: center;
 }
 
 .whatdoyou-body{
@@ -381,10 +416,11 @@ a:focus{
 }
 
 .whatdoyou-body p{
-	font-size: 12px;
-	color: #d0ae5e;
-	margin-bottom: 1.5em;
-	text-align: left;
+	font-size: 18px;
+    color: black;
+    margin-bottom: 1.5em;
+    text-align: left;
+    text-align: center;
 }
 
 .whatdoyou-body .btn-custom{
@@ -398,6 +434,18 @@ a:focus{
 	background: #d0ae5c;
 	color: #fff;
 }
+
+.indiba img{
+	margin: 41px 35px;
+}
+
+/*.indiba h3{
+	padding-bottom: 38px;
+}*/
+
+/*.indiba p{
+	padding-bottom: 17px;
+}*/
 
 .services{
 	padding: 100px 0 40px;
@@ -456,7 +504,7 @@ a:focus{
 
 .membership{
 	background: #282828;
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .membership .main-title h2{
@@ -546,7 +594,7 @@ a:focus{
 }
 
 .ourteam{
-	padding: 100px 0;
+	padding: 50px 0;
 }
 
 .team-single{
@@ -559,7 +607,7 @@ a:focus{
 	border-radius: 50%;
 	overflow: hidden;
 	margin-bottom: 24px;
-	max-width: 280px;
+	max-width: 140px;
 }
 
 .team-single h3{
@@ -571,8 +619,12 @@ a:focus{
 }
 
 .team-single p{
-	color: #d0ae5e;
-	font-size: 18px;
+    font: bold;
+    color: #707070;
+    font-size: 24px;
+    line-height: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .team-single .black{
@@ -655,7 +707,7 @@ a:focus{
 }
 
 .contact{
-	padding: 100px 0;
+	padding: 30px 0;
 	background: linear-gradient(#f4f1f1 60%, #fff 40%);
 }
 
@@ -678,6 +730,10 @@ a:focus{
 .contact-info p i{
 	font-size: 20px;
 	padding-right: 10px;
+}
+
+.contact-info a{
+	visibility: hidden;
 }
 
 .contact-form{
@@ -704,6 +760,21 @@ a:focus{
 	padding: 15px 20px;
 	border-radius: 0;
 	margin-top: 20px;
+}
+
+.map-container{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+}
+
+.map-container iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
 }
 
 footer{
@@ -746,9 +817,6 @@ footer{
 	color: #282828;
 }
 
-.footer-info{
-	
-}
 
 .footer-info p{
 	color: #fff;
@@ -794,6 +862,18 @@ footer{
 		 Responsive Media Query
 ****************************************/
 
+@media only screen and (max-width: 1400px) {
+
+	.whatdoyou-body h3{
+		font-size: 17px;
+	}
+
+	.whatdoyou-body p{
+		font-size: 16px;
+	}
+
+}
+
 @media only screen and (max-width: 1200px) {
 	.btn-custom{
 		min-width: auto;
@@ -802,9 +882,11 @@ footer{
 
 @media only screen and (max-width: 991px) {
 	
-	.navbar-brand img{
-		max-height: 44px;
+	.banner h1{
+		font-size: 2.5em;
 	}
+
+	
 	
 	.navbar-default .navbar-nav>li>a{
 		font-size: 13px;
@@ -831,15 +913,36 @@ footer{
 		text-align: center;
 		margin-top: 30px;
 	}
+
+
 	
 }
-	
+
 
 /* Mobile Layout */
 @media only screen and (max-width: 767px){
 	
+	.banner h1{
+		font-size: 2.5em;
+	}
+
+	h2,p{
+		text-align: center;
+	}
+
+	.navbar-brand h4{
+		font-size: 0.85em;
+		padding-top: 15px;
+	}
+
+	.about-desc p{
+		text-align: center;
+		font-size: 16px;
+	}
+
 	#responsive-menu{
 		display: block;
+		font-size: 17px;
 		
 	}
 	
@@ -984,10 +1087,25 @@ footer{
 	.contact-box{
 		padding: 30px 20px;
 	}
+
+	.contact-info a{
+		visibility: visible;
+	}
+
+	.map-container{
+		width: 80%;
+		margin-left: 10%;
+	}
 }
 
 /* Small Mobile Layout */
 @media only screen and (max-width: 480px) {
+
+	.banner h1{
+		font-size: 1.5em;
+	}
+
+
 	.team-single figure{
 		max-width: 200px;
 	}
@@ -1032,5 +1150,12 @@ footer{
 	
 	.gallery-info p{
 		font-size: 14px;
+	}	
+}
+
+/* X-Small Mobile Layout */
+@media only screen and (max-width: 326px) {
+	.navbar-brand h4{
+		font-size: 0.7em;
 	}
 }
